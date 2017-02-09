@@ -1,5 +1,20 @@
-extends layout
+extends ./layouts/layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+	#background
+	header
+		img.logo(src="images/logo-text-border.png")
+	.section-divider
+		span OM RAINTECH
+	#about.container-fluid
+		.overlay-container
+			img(src="images/app.jpg")
+			.overlay-image
+				span APPUTVIKLING
+			
+		.overlay-container
+			img(src="images/web.jpeg")
+			.overlay-image
+				span WEBUTVIKLING
+	
+

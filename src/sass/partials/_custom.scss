@@ -1,0 +1,87 @@
+body {
+    font-family: 'open-sans', sans-serif;
+}
+
+#background {
+    @include diagonal-gradient(#2c2b29, #706d69);
+    height: 100vh;
+    width: 100vw;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+header {
+    height: 55vh;
+        .logo {
+            display: block;
+            margin: 40vh auto 0;
+    }
+}
+
+#about {
+    height: 1000px;
+}
+
+.overlay-container {
+    display: inline-block;
+    position: relative;
+
+    .overlay-image {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background: #000;
+        opacity: 0;
+
+        span {
+            font-size: 3em;
+            position: absolute;
+            top: 45%;
+            left: 25%;
+            color: #fff;
+            font-weight: 100;
+            letter-spacing: 1px;
+        }
+    }
+
+    .overlay-image:hover {
+        opacity: 0.8;
+    }
+}
+
+.section-divider {
+    line-height: 0.5;
+    text-align: center;
+    margin: 100px 0;
+
+    span {
+        color: #fff;
+        display: inline-block;
+        position: relative;
+        font-weight: 100;
+        font-size: 1.1em;
+    }
+
+    span:before, span:after {
+        content: "";
+        position: absolute;
+        height: 5px;
+        border-bottom: 1px solid white;
+        top: 0;
+        width: 250px;
+    }
+
+    span:before {
+        right: 100%;
+        margin-right: 30px;
+    }
+
+    span:after {
+        left: 100%;
+        margin-left: 30px;
+    }  
+}

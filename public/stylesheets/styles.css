@@ -5814,4 +5814,80 @@ button.close {
   .hidden-print {
     display: none !important; } }
 
+body {
+  font-family: 'open-sans', sans-serif; }
+
+#background {
+  background: #2c2b29;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(right top, #2c2b29, #706d69);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(top right, #2c2b29, #706d69);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(top right, #2c2b29, #706d69);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(to top right, #2c2b29, #706d69);
+  /* Standard syntax */
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: -1; }
+
+header {
+  height: 55vh; }
+  header .logo {
+    display: block;
+    margin: 40vh auto 0; }
+
+#about {
+  height: 1000px; }
+
+.overlay-container {
+  display: inline-block;
+  position: relative; }
+  .overlay-container .overlay-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background: #000;
+    opacity: 0; }
+    .overlay-container .overlay-image span {
+      font-size: 3em;
+      position: absolute;
+      top: 45%;
+      left: 25%;
+      color: #fff;
+      font-weight: 100;
+      letter-spacing: 1px; }
+  .overlay-container .overlay-image:hover {
+    opacity: 0.8; }
+
+.section-divider {
+  line-height: 0.5;
+  text-align: center;
+  margin: 100px 0; }
+  .section-divider span {
+    color: #fff;
+    display: inline-block;
+    position: relative;
+    font-weight: 100;
+    font-size: 1.1em; }
+  .section-divider span:before, .section-divider span:after {
+    content: "";
+    position: absolute;
+    height: 5px;
+    border-bottom: 1px solid white;
+    top: 0;
+    width: 250px; }
+  .section-divider span:before {
+    right: 100%;
+    margin-right: 30px; }
+  .section-divider span:after {
+    left: 100%;
+    margin-left: 30px; }
+
 /*# sourceMappingURL=styles.css.map */
