@@ -1,0 +1,50 @@
+#about {
+    .content .inner {
+
+        .phone-icon, .mac-icon, .system-icon, .responsive-icon {
+            display: block;
+            margin: 0 auto;
+            height: 125px;
+            @include transform-transition();
+        }
+        .phone-icon {
+            background: url("../icons/phone.png");
+            @include background-props;
+        }
+        .mac-icon {
+            background: url("../icons/mac.png");
+            @include background-props;
+        }
+        .system-icon {
+            background: url("../icons/system.png");
+            @include background-props;
+        }
+        .responsive-icon {
+            background: url("../icons/responsive.png");
+            @include background-props;
+        }
+    }
+
+    .content:hover {
+        .phone-icon {
+            background: url("../icons/phone-white.png");
+            @include background-props;
+            @include transformY(-80px);
+            }
+        .mac-icon {
+            background: url("../icons/mac-white.png");
+            @include background-props;
+            @include transformY(-80px);
+        }
+        .system-icon {
+            background: url("../icons/system-white.png");
+            @include background-props;
+            @include transformY(-80px);
+        }
+        .responsive-icon {
+            background: url("../icons/responsive-white.png");
+            @include background-props;
+            @include transformY(-80px);
+        }
+    }
+}

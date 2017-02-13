@@ -5,3 +5,36 @@
     background: -moz-linear-gradient(top right, $color1, $color2); /* For Firefox 3.6 to 15 */
     background: linear-gradient(to top right, $color1, $color2); /* Standard syntax */
 }
+
+$transition-duration: 0.4s;
+
+@mixin transformY($value) {
+    -webkit-transform: translateY($value);
+    -ms-transform: translateY($value);
+    -moz-transform: translateY($value);
+    -o-transform: translateY($value);
+    transform: translateY($value);
+} 
+
+@mixin transform-transition() {
+
+    -webkit-transition: transform $transition-duration;
+    -ms-transition: transform $transition-duration;
+    -moz-transition: transform $transition-duration;
+    -o-transition: transform $transition-duration;
+    transition: transform $transition-duration;
+}
+
+@mixin background-color-transition() {
+    -webkit-transition: background-color $transition-duration;
+    -ms-transition: background-color $transition-duration;
+    -moz-transition: background-color $transition-duration;
+    -o-transition: background-color $transition-duration;
+    transition: background-color $transition-duration;
+}
+
+@mixin background-props() {
+    background-position:center center;
+    background-size: auto 125px;
+    background-repeat: no-repeat;
+}

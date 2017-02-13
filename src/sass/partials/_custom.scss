@@ -1,87 +1,160 @@
 body {
     font-family: 'open-sans', sans-serif;
+    height: 5000px;
 }
 
-#background {
-    @include diagonal-gradient(#2c2b29, #706d69);
+#hero1 {
+    background: url("../images/raintech-header-blue.png");
+    background-size:cover;
+    background-position:center center;
+    background-attachment:fixed;
+
     height: 100vh;
-    width: 100vw;
-    position: fixed;
-    top: 0;
-    left: 0;
-    z-index: -1;
+
+    img {
+        position: absolute;
+        top: 35%;
+        left: 25%;
+    }
 }
 
-header {
-    height: 55vh;
-        .logo {
-            display: block;
-            margin: 40vh auto 0;
-    }
+#hero2 {
+    background: url("../images/light.jpeg");
+    background-size: auto;
+    background-position:center center;
+    background-attachment:fixed;
+}
+
+.background {
+    position: relative;
+    width: 100%;
 }
 
 #about {
-    height: 1000px;
-}
-
-.overlay-container {
-    display: inline-block;
-    position: relative;
-
-    .overlay-image {
-        position: absolute;
-        top: 0;
-        left: 0;
-        height: 100%;
-        width: 100%;
-        background: #000;
-        opacity: 0;
-
-        span {
-            font-size: 3em;
+    .content {
+        height: 410px;
+        position: relative;
+        overflow: hidden;
+        background-color: #fff;
+        @include background-color-transition();
+        
+        .inner {
             position: absolute;
-            top: 45%;
-            left: 25%;
+            bottom: 100px;
+            left: 0;
+            right: 0;
+            margin: auto;
+            @include transform-transition();
+
+            img {
+                display: block;
+                margin: 0 auto;
+                height: 125px;
+                @include transform-transition();
+            }
+
+            span {
+                margin-top: 50px;
+                display: block;
+                text-align: center;
+                font-weight: 500;
+                font-size: 1.3em;
+                @include transform-transition();
+            }
+        }
+
+        .toggle {
             color: #fff;
-            font-weight: 100;
-            letter-spacing: 1px;
+            position: absolute;
+            background-color: #ffa64d;
+            bottom: 0;
+            height: 200px;
+            padding: 30px;
+            text-align: center;
+            font-weight: 300;
+            line-height: 1.5em;
+            font-size: 1.5em;
+            @include transformY(100%);
+            @include transform-transition();
         }
     }
 
-    .overlay-image:hover {
-        opacity: 0.8;
+    .content:hover {
+        background-color: #ffa64d;
+        .inner {
+        
+            img {
+                 @include transformY(-80px);
+            }
+
+            span {
+                @include transformY(-100px);
+            }
+           
+        }
+        .toggle {
+            @include transformY(0);
+        }
     }
 }
 
-.section-divider {
-    line-height: 0.5;
+#about-us {
+        margin-top: 70px;
+        margin-bottom: 70px; 
+
+    p {
+        text-align: justify;
+        font-size: 2em;
+        padding: 50px;
+        line-height: 1.8em;
+        font-weight: 300;
+    }
+}
+
+#projects {
+    .image-container {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        img {
+            width: 100%;
+        }
+    }
+    
+}
+
+.intersection {
     text-align: center;
-    margin: 100px 0;
+    color: #fff;
+}
 
-    span {
-        color: #fff;
-        display: inline-block;
-        position: relative;
-        font-weight: 100;
-        font-size: 1.1em;
-    }
+.no-padding {
+    padding: 0;
+}
 
-    span:before, span:after {
-        content: "";
+.overlay {
+    height: 350px;
+    background-color: rgba(51, 153, 255, 0.4);
+    position: relative;
+
+    .text {
         position: absolute;
-        height: 5px;
-        border-bottom: 1px solid white;
-        top: 0;
-        width: 250px;
+        top:40%; 
+        width:100%;
+        font-size: 4em;
     }
+}
 
-    span:before {
-        right: 100%;
-        margin-right: 30px;
-    }
+.push-down-100 {
+    margin-top: 100px;
+}
 
-    span:after {
-        left: 100%;
-        margin-left: 30px;
-    }  
+.center-block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+        text-align: center;
+        font-size: 3em;
+        font-weight: 300;
 }
