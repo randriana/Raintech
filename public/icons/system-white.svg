@@ -12,7 +12,7 @@
    preserveAspectRatio="xMidYMid meet"
    viewBox="0 0 275.61655 239"
    id="svg4695"
-   sodipodi:docname="system.svg"
+   sodipodi:docname="system-white.svg"
    inkscape:version="0.92.0 r"
    width="275.61655"
    height="239"
@@ -32,7 +32,7 @@
     </rdf:RDF>
   </metadata>
   <sodipodi:namedview
-     pagecolor="#ffffff"
+     pagecolor="#000000"
      bordercolor="#666666"
      borderopacity="1"
      objecttolerance="10"
@@ -45,7 +45,7 @@
      id="namedview4697"
      showgrid="false"
      inkscape:zoom="1.0429825"
-     inkscape:cx="172.18242"
+     inkscape:cx="13.02347"
      inkscape:cy="69.741441"
      inkscape:window-x="1443"
      inkscape:window-y="23"
@@ -76,7 +76,7 @@
        width="100%"
        y="0"
        x="0"
-       style="opacity:1;fill-opacity:0;stroke:#f39d2e;stroke-width:3.75554392;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill-opacity:0;stroke:#ffffff;stroke-width:3.75554395;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="use4677"
        xlink:href="#a1BUzw3ICh"
        transform="matrix(0.93195555,0,0,0.93195555,-207.16787,-55.916259)" />
@@ -85,7 +85,7 @@
        width="100%"
        y="0"
        x="0"
-       style="opacity:1;fill-opacity:0;stroke:#f39d2e;stroke-width:3.75554392;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       style="opacity:1;fill-opacity:0;stroke:#ffffff;stroke-width:3.75554395;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="use4683"
        xlink:href="#g6jiLI0r0A"
        transform="matrix(0.93195555,0,0,0.93195555,-207.16787,-55.916259)" />

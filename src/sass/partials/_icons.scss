@@ -1,26 +1,56 @@
 .icons {
     $icon-height: 125px;
     .content .inner {
-        .phone-icon, .mac-icon, .system-icon, .responsive-icon {
+        .phone-icon, .mac-icon, .system-icon, .responsive-icon, .search-icon, 
+        .lightbulb-icon, .design-icon, .tool-icon, .code-icon, .price-icon, .clock-icon {
             display: block;
             margin: 0 auto;
             height: $icon-height;
             @include transform-transition();
         }
+
         .phone-icon {
-            background: url("../icons/phone.png");
+            background: url("../icons/phone-optimized.svg");
             @include icon-props($icon-height);
         }
         .mac-icon {
-            background: url("../icons/mac.png");
+            background: url("../icons/mac-optimized.svg");
             @include icon-props($icon-height);
         }
         .system-icon {
-            background: url("../icons/system.png");
+            background: url("../icons/system.svg");
             @include icon-props($icon-height);
         }
         .responsive-icon {
-            background: url("../icons/responsive.png");
+            background: url("../icons/responsive-optimized.svg");
+            @include icon-props($icon-height);
+        }
+        .search-icon {
+            background: url("../icons/seo.svg");
+            @include icon-props($icon-height);
+        }
+        .lightbulb-icon {
+            background: url("../icons/lightbulb.svg");
+            @include icon-props($icon-height);
+        }
+        .design-icon {
+            background: url("../icons/pencil.svg");
+            @include icon-props($icon-height);
+        }
+        .tool-icon {
+            background: url("../icons/tool.svg");
+            @include icon-props($icon-height);
+        }
+        .code-icon {
+            background: url("../icons/prototype.svg");
+            @include icon-props($icon-height);
+        }
+        .price-icon {
+            background: url("../icons/price.svg");
+            @include icon-props($icon-height);
+        }
+        .clock-icon {
+            background: url("../icons/clock.svg");
             @include icon-props($icon-height);
         }
     }
@@ -28,22 +58,57 @@
     .content:hover {
         $transformValue: -40px;
         .phone-icon {
-            background: url("../icons/phone-white.png");
+            background: url("../icons/phone-white-optimized.svg");
             @include icon-props($icon-height);
             @include transformY($transformValue);
             }
         .mac-icon {
-            background: url("../icons/mac-white.png");
+            background: url("../icons/mac-white-optimized.svg");
             @include icon-props($icon-height);
             @include transformY($transformValue);
         }
         .system-icon {
-            background: url("../icons/system-white.png");
+            background: url("../icons/system-white.svg");
             @include icon-props($icon-height);
             @include transformY($transformValue);
         }
         .responsive-icon {
-            background: url("../icons/responsive-white.png");
+            background: url("../icons/responsive-white-optimized.svg");
+            @include icon-props($icon-height);
+            @include transformY($transformValue);
+        }
+        .search-icon {
+            background: url("../icons/seo-white.svg");
+            @include icon-props($icon-height);
+            @include transformY($transformValue);
+        }
+        .lightbulb-icon {
+            background: url("../icons/lightbulb-white.svg");
+            @include icon-props($icon-height);
+            @include transformY($transformValue);
+        }
+        .design-icon {
+            background: url("../icons/pencil-white.svg");
+            @include icon-props($icon-height);
+            @include transformY($transformValue);
+        }
+        .tool-icon {
+            background: url("../icons/tool-white.svg");
+            @include icon-props($icon-height);
+            @include transformY($transformValue);
+        }
+        .code-icon {
+            background: url("../icons/prototype-white.svg");
+            @include icon-props($icon-height);
+            @include transformY($transformValue);
+        }
+        .price-icon {
+            background: url("../icons/price-white.svg");
+            @include icon-props($icon-height);
+            @include transformY($transformValue);
+        }
+        .clock-icon {
+            background: url("../icons/clock-white.svg");
             @include icon-props($icon-height);
             @include transformY($transformValue);
         }

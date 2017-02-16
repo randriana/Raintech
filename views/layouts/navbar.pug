@@ -1,16 +1,14 @@
-nav(class="navbar navbar-default navbar-fixed-top")
-      .container
-        .navbar-header
-          button(type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar")
-            span.sr-only Toggle navigation
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
-          //a.navbar-brand(href="#") RAINTECH
-        #navbar(class="collapse navbar-collapse navbar-right")
-          ul(class="nav navbar-nav")
-            li: a(href="#services") Tjenester
-            li: a(href="#grunder") Gründer
-            li: a(href="#about-us") Om oss
-            li: a(href="#projects") Prosjekter
-            li: a(href="#contact") Kontakt
+#navigation
+	.button_container#toggle
+		span.top
+		span.middle
+		span.bottom
+
+	.nav-overlay#nav-overlay
+		nav.overlay-menu
+			ul
+				li: a.nav-link(href="#services") Tjenester
+				li: a.nav-link(href="#grunder") Gründer
+				li: a.nav-link(href="#about-us") Om oss
+				li: a.nav-link(href="#projects") Prosjekter
+				li: a.nav-link(href="#contact") Kontakt

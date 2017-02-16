@@ -10,20 +10,25 @@
     }
 
     .overlay {
-        background-color: rgba(54, 92, 124,0.8);
+        background-color: rgba(54, 92, 124,0.9);
+        //background-color: $main-blue;
     }
 }
 
 #hero2 {
     background: url("../images/light.jpeg");
     @include background-props;
+
+    .overlay {
+        background-color: rgba(51, 153, 255, 0.4);
+    }
 }
 
 #hero3 {
     @include background-props;
 
     .overlay {
-        background-color: rgba(54, 92, 124,1);
+        background-color: rgb(54, 92, 124);
 
         .text {
             padding: 0 100px;
