@@ -1,38 +1,23 @@
 body {
     font-family: 'open-sans', sans-serif;
     height: 5000px;
-}
 
-#hero1 {
-    background: url("../images/raintech-header-blue.png");
-    background-size:cover;
-    background-position:center center;
-    background-attachment:fixed;
+    h2 {
+        text-align: center;
+        font-size: 2.1em;
+        font-weight: 300;
+    }
 
-    height: 100vh;
-
-    img {
-        position: absolute;
-        top: 35%;
-        left: 25%;
+    p {
+        text-align: justify;
+        line-height: 1.8em;
+        font-weight: 300;
     }
 }
 
-#hero2 {
-    background: url("../images/light.jpeg");
-    background-size: auto;
-    background-position:center center;
-    background-attachment:fixed;
-}
-
-.background {
-    position: relative;
-    width: 100%;
-}
-
-#about {
+.icons {
     .content {
-        height: 410px;
+        height: 350px;
         position: relative;
         overflow: hidden;
         background-color: #fff;
@@ -40,18 +25,11 @@ body {
         
         .inner {
             position: absolute;
-            bottom: 100px;
+            bottom: 80px;
             left: 0;
             right: 0;
             margin: auto;
             @include transform-transition();
-
-            img {
-                display: block;
-                margin: 0 auto;
-                height: 125px;
-                @include transform-transition();
-            }
 
             span {
                 margin-top: 50px;
@@ -68,8 +46,8 @@ body {
             position: absolute;
             background-color: #ffa64d;
             bottom: 0;
-            height: 200px;
-            padding: 30px;
+            height: 130px;
+            padding: 10px 30px 0;
             text-align: center;
             font-weight: 300;
             line-height: 1.5em;
@@ -82,15 +60,9 @@ body {
     .content:hover {
         background-color: #ffa64d;
         .inner {
-        
-            img {
-                 @include transformY(-80px);
-            }
-
             span {
-                @include transformY(-100px);
+                @include transformY(-60px);
             }
-           
         }
         .toggle {
             @include transformY(0);
@@ -99,14 +71,19 @@ body {
 }
 
 #about-us {
-        margin-top: 70px;
-        margin-bottom: 70px; 
+    margin-top: 70px;
+    margin-bottom: 70px;
+
+   
+}
+
+#grunder {
+    margin-top: 100px;
 
     p {
-        text-align: justify;
+        text-align: center;
+        margin-top: 20px;
         font-size: 2em;
-        padding: 50px;
-        line-height: 1.8em;
         font-weight: 300;
     }
 }
@@ -114,33 +91,78 @@ body {
 #projects {
     .image-container {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
         img {
             width: 100%;
         }
     }
-    
+}
+
+#contact {
+    margin: 150px 0;
+    .form-container {
+        width: 70%;
+
+        ul {
+            @include listcolumns(2);
+            padding: 0;
+
+            li {
+                list-style-type: none;
+                margin-bottom: 20px;
+
+                input {
+                    width: 100%;
+                    height: 45px;
+                    border: none;
+                    border-bottom: 2px solid rgb(54, 92, 124);
+                    font-size: 1.2em;
+                }
+            }
+        }
+
+        textarea {
+            width: 100%;
+            border: none;
+            border-bottom: 2px solid rgb(54, 92, 124);
+            margin-bottom: 20px;
+            font-size: 1.2em;
+        }
+
+        input:focus, textarea:focus {
+            outline: none
+        }
+
+        #submitbutton {
+            background-color: #fff;
+            color: rgb(54, 92, 124);
+            padding: 10px 40px;
+            font-size: 1.3em;
+            border: 2px solid;
+        }
+    }
 }
 
 .intersection {
+    height: 350px;
     text-align: center;
     color: #fff;
 }
 
-.no-padding {
-    padding: 0;
+.text-block {
+    .text-header {
+        font-size: 2.1em;
+    }
+
+    .text-content {
+        margin-top: 50px;
+        padding: 30px 20px;
+        font-size: 1.7em;
+    }
 }
 
-.overlay {
-    height: 350px;
-    background-color: rgba(51, 153, 255, 0.4);
-    position: relative;
-
-    .text {
-        position: absolute;
-        top:40%; 
-        width:100%;
-        font-size: 4em;
-    }
+.no-padding {
+    padding: 0;
 }
 
 .push-down-100 {
@@ -153,8 +175,3 @@ body {
     margin-right: auto;
 }
 
-h2 {
-        text-align: center;
-        font-size: 3em;
-        font-weight: 300;
-}

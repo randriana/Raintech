@@ -1,50 +1,51 @@
-#about {
+.icons {
+    $icon-height: 125px;
     .content .inner {
-
         .phone-icon, .mac-icon, .system-icon, .responsive-icon {
             display: block;
             margin: 0 auto;
-            height: 125px;
+            height: $icon-height;
             @include transform-transition();
         }
         .phone-icon {
             background: url("../icons/phone.png");
-            @include background-props;
+            @include icon-props($icon-height);
         }
         .mac-icon {
             background: url("../icons/mac.png");
-            @include background-props;
+            @include icon-props($icon-height);
         }
         .system-icon {
             background: url("../icons/system.png");
-            @include background-props;
+            @include icon-props($icon-height);
         }
         .responsive-icon {
             background: url("../icons/responsive.png");
-            @include background-props;
+            @include icon-props($icon-height);
         }
     }
 
     .content:hover {
+        $transformValue: -40px;
         .phone-icon {
             background: url("../icons/phone-white.png");
-            @include background-props;
-            @include transformY(-80px);
+            @include icon-props($icon-height);
+            @include transformY($transformValue);
             }
         .mac-icon {
             background: url("../icons/mac-white.png");
-            @include background-props;
-            @include transformY(-80px);
+            @include icon-props($icon-height);
+            @include transformY($transformValue);
         }
         .system-icon {
             background: url("../icons/system-white.png");
-            @include background-props;
-            @include transformY(-80px);
+            @include icon-props($icon-height);
+            @include transformY($transformValue);
         }
         .responsive-icon {
             background: url("../icons/responsive-white.png");
-            @include background-props;
-            @include transformY(-80px);
+            @include icon-props($icon-height);
+            @include transformY($transformValue);
         }
     }
 }

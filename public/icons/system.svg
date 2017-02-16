@@ -24,7 +24,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -37,17 +37,17 @@
      guidetolerance="10"
      inkscape:pageopacity="0"
      inkscape:pageshadow="2"
-     inkscape:window-width="1920"
-     inkscape:window-height="1035"
+     inkscape:window-width="1387"
+     inkscape:window-height="855"
      id="namedview4697"
      showgrid="false"
-     inkscape:zoom="0.36875"
-     inkscape:cx="-401.25729"
-     inkscape:cy="95.549823"
-     inkscape:window-x="1441"
+     inkscape:zoom="1.0429825"
+     inkscape:cx="31.970845"
+     inkscape:cy="124.74633"
+     inkscape:window-x="53"
      inkscape:window-y="23"
      inkscape:window-maximized="0"
-     inkscape:current-layer="g4693"
+     inkscape:current-layer="svg4695"
      fit-margin-top="0"
      fit-margin-left="0"
      fit-margin-right="0"
@@ -152,43 +152,23 @@
      id="g4693"
      style="visibility:inherit"
      transform="translate(-113.76152,-223.02474)">
-    <g
-       visibility="inherit"
-       id="g4689"
-       style="visibility:inherit"
-       transform="translate(-230.50848,-94.915257)">
-      <g
-         visibility="inherit"
-         id="g4681"
-         style="visibility:inherit">
-        <g
-           id="g4679">
-          <use
-             xlink:href="#a1BUzw3ICh"
-             id="use4677"
-             style="opacity:1;fill-opacity:0;stroke:#f39d2e;stroke-width:1;stroke-opacity:1"
-             x="0"
-             y="0"
-             width="100%"
-             height="100%" />
-        </g>
-      </g>
-      <g
-         visibility="inherit"
-         id="g4687"
-         style="visibility:inherit">
-        <g
-           id="g4685">
-          <use
-             xlink:href="#g6jiLI0r0A"
-             id="use4683"
-             style="opacity:1;fill-opacity:0;stroke:#f39d2e;stroke-width:1;stroke-opacity:1"
-             x="0"
-             y="0"
-             width="100%"
-             height="100%" />
-        </g>
-      </g>
-    </g>
+    <use
+       height="100%"
+       width="100%"
+       y="0"
+       x="0"
+       style="opacity:1;fill-opacity:0;stroke:#f39d2e;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="use4677"
+       xlink:href="#a1BUzw3ICh"
+       transform="translate(-230.50848,-94.915257)" />
+    <use
+       height="100%"
+       width="100%"
+       y="0"
+       x="0"
+       style="opacity:1;fill-opacity:0;stroke:#f39d2e;stroke-width:2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="use4683"
+       xlink:href="#g6jiLI0r0A"
+       transform="translate(-230.50848,-94.915257)" />
   </g>
 </svg>

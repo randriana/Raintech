@@ -2,71 +2,113 @@ extends ./layouts/layout
 
 block content
 	header#hero1.background
-		img(src="images/logo-text-border.png")
-	#about
-		.container-fluid
-			.row
-				.col-md-3.no-padding
-					.content
-						.inner
-							.phone-icon
-							span APPUTVIKLING
-						span.toggle Shaping a creative identity, rich and versatile. Enhance your corporate image.
+		.overlay
+		img(src="images/logo-new.svg")
+	section#services
+		.icons
+			.container-fluid
+				.row
+					.col-md-3.no-padding
+						.content
+							.inner
+								.phone-icon
+								span APPUTVIKLING
+							span.toggle Shaping a creative identity, rich and versatile. Enhance your corporate image.
 
-				.col-md-3.no-padding
-					.content
-						.inner
-							.mac-icon
-							span WEBUTVIKLING
-						span.toggle Shaping a creative identity, rich and versatile. Enhance your corporate image.
-				.col-md-3.no-padding
-					.content
-						.inner
-							.system-icon
-							span WEBAPPLIKASJONER
-						span.toggle Shaping a creative identity, rich and versatile. Enhance your corporate image.
-				.col-md-3.no-padding
-					.content
-						.inner
-							.responsive-icon
-							span SEO
-						span.toggle Shaping a creative identity, rich and versatile. Enhance your corporate image.
-			.row
-				.col-md-3.no-padding
-					.content
-						.inner
-							.phone-icon
-							span APPUTVIKLING
-						span.toggle Shaping a creative identity, rich and versatile. Enhance your corporate image.
+					.col-md-3.no-padding
+						.content
+							.inner
+								.mac-icon
+								span WEBUTVIKLING
+							span.toggle Shaping a creative identity, rich and versatile. Enhance your corporate image.
+					.col-md-3.no-padding
+						.content
+							.inner
+								.system-icon
+								span WEBAPPLIKASJONER
+							span.toggle Shaping a creative identity, rich and versatile. Enhance your corporate image.
+					.col-md-3.no-padding
+						.content
+							.inner
+								.responsive-icon
+								span SEO
+							span.toggle Shaping a creative identity, rich and versatile. Enhance your corporate image.
+				.row
+					.col-md-3.no-padding
+						.content
+							.inner
+								.phone-icon
+								span APPUTVIKLING
+							span.toggle Shaping a creative identity, rich and versatile. Enhance your corporate image.
 
-				.col-md-3.no-padding
-					.content
-						.inner
-							.mac-icon
-							span WEBUTVIKLING
-						span.toggle Shaping a creative identity, rich and versatile. Enhance your corporate image.
-				.col-md-3.no-padding
-					.content
-						.inner
-							.system-icon
-							span WEBAPPLIKASJONER
-						span.toggle Shaping a creative identity, rich and versatile. Enhance your corporate image.
-				.col-md-3.no-padding
-					.content
-						.inner
-							.responsive-icon
-							span SEO
-						span.toggle Shaping a creative identity, rich and versatile. Enhance your corporate image.
+					.col-md-3.no-padding
+						.content
+							.inner
+								.mac-icon
+								span WEBUTVIKLING
+							span.toggle Shaping a creative identity, rich and versatile. Enhance your corporate image.
+					.col-md-3.no-padding
+						.content
+							.inner
+								.system-icon
+								span WEBAPPLIKASJONER
+							span.toggle Shaping a creative identity, rich and versatile. Enhance your corporate image.
+					.col-md-3.no-padding
+						.content
+							.inner
+								.responsive-icon
+								span SEO
+							span.toggle Shaping a creative identity, rich and versatile. Enhance your corporate image.
+
 	#hero2.intersection
 		.overlay
 			.text
-				p VI SETTER <span style="color: #ffa64d;">IDÈER</span> UT I LIVE.
-	#about-us.container
-		.center-block
-			h2 HVEM ER <span style="color: #ffa64d;">VI</span>
-			p Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis quam at urna aliquam, varius blandit massa molestie. Aliquam sit amet lacinia ligula. Proin interdum risus arcu, et aliquet risus mattis tincidunt. Duis erat ligula, iaculis eu aliquet non, tempor a 			| metus. Sed pharetra erat sed finibus euismod. Morbi et diam libero. Ut non pharetra tortor. Nullam scelerisque ante ac augue finibus suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+				span VI SETTER <span style="color: #ffa64d;">IDÈER</span> UT I LIVE.
+
+	section#grunder
+		.container-fluid
+			.text-block
+				h2.text-header ER DU EN <span style="color: #ffa64d;">GRÜNDER</span>?
+				p.text-content Har du en <span style="color: #ffa64d;">forretnindsidée</span> som du har lyst til å relalisere? Vi hjelper deg!
+			.icons.row
+				.col-md-4.no-padding
+					.content
+						.inner
+							.phone-icon
+							span PROTOTYPE
+						span.toggle Shaping a creative identity, rich and versatile. Enhance your corporate image.
+
+				.col-md-4.no-padding
+					.content
+						.inner
+							.mac-icon
+							span LAV KOSTNAD
+						span.toggle Shaping a creative identity, rich and versatile. Enhance your corporate image.
+				.col-md-4.no-padding
+					.content
+						.inner
+							.system-icon
+							span WEBAPPLIKASJONER
+						span.toggle Shaping a creative identity, rich and versatile. Enhance your corporate image.
+
+	#hero3.intersection
+		.overlay
+			.text
+				span Vårt første <span style="color: #ffa64d;">prioritering</span> er å levere et produkt som kunden er <span style="color: #ffa64d;">100% tilfreds</span> med.
+					
+	section#about-us
+		.container
+			.text-block
+				.row
+					.col-md-2
+						h2.text-header HVEM ER <span style="color: #ffa64d;">VI</span>
+					.col-md-10
+						p.text-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis quam at urna aliquam, varius blandit massa molestie. 
+							| Aliquam sit amet lacinia ligula. Proin interdum risus arcu, et aliquet risus mattis tincidunt. Duis erat ligula, iaculis eu aliquet non, 
+							| tempor a metus. Sed pharetra erat sed finibus euismod. Morbi et diam libero. Ut non pharetra tortor. 
+							| Nullam scelerisque ante ac augue finibus suscipit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
 	
-	#projects
+	section#projects
 		h2 HVA VI HAR <span style="color: #ffa64d;">JOBBET</span> MED
 		.container.push-down-100
 			.row
@@ -78,3 +120,17 @@ block content
 					.center-block
 						.image-container
 							img(src="images/blueways.png")
+
+	section#contact
+		.container
+			h2 JOBBE MED OSS?
+			.form-container.center-block
+				form()
+					ul
+						li: input(type="text" name="name" placeholder="Navn" required)
+						li: input(type="email" name="email" placeholder="Epost" required)
+						li: input(type="number" name="mobile" placeholder="Mobil")
+						li: input(type="text" name="subject" placeholder="Emne" required)
+					textarea(rows="5" name="message" placeholder="Melding" required)
+					input#submitbutton(type="submit" value="SEND")
+
