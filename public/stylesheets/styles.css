@@ -5826,74 +5826,76 @@ body {
     line-height: 1.8em;
     font-weight: 300; }
 
-.icons .content {
-  height: 320px;
-  position: relative;
-  overflow: hidden;
-  background-color: #fff;
-  -webkit-transition: background-color 0.4s;
-  -ms-transition: background-color 0.4s;
-  -moz-transition: background-color 0.4s;
-  -o-transition: background-color 0.4s;
-  transition: background-color 0.4s; }
-  .icons .content .inner {
-    position: absolute;
-    bottom: 80px;
-    left: 0;
-    right: 0;
-    margin: auto;
-    -webkit-transition: transform 0.4s;
-    -ms-transition: transform 0.4s;
-    -moz-transition: transform 0.4s;
-    -o-transition: transform 0.4s;
-    transition: transform 0.4s; }
-    .icons .content .inner span {
-      margin-top: 50px;
-      display: block;
-      text-align: center;
-      font-weight: 500;
-      font-size: 1.3em;
+.icons {
+  background-color: #ffa64d;
+  padding-top: 25px; }
+  .icons .content {
+    height: 320px;
+    position: relative;
+    overflow: hidden;
+    background-color: #fff;
+    -webkit-transition: background-color 0.4s;
+    -ms-transition: background-color 0.4s;
+    -moz-transition: background-color 0.4s;
+    -o-transition: background-color 0.4s;
+    transition: background-color 0.4s; }
+    .icons .content .inner {
+      position: absolute;
+      bottom: 80px;
+      left: 0;
+      right: 0;
+      margin: auto;
       -webkit-transition: transform 0.4s;
       -ms-transition: transform 0.4s;
       -moz-transition: transform 0.4s;
       -o-transition: transform 0.4s;
       transition: transform 0.4s; }
-  .icons .content .toggle {
-    color: #fff;
-    position: absolute;
-    background-color: #ffa64d;
-    bottom: 0;
-    height: 130px;
-    padding: 10px 30px 0;
-    text-align: center;
-    font-weight: 300;
-    line-height: 1.5em;
-    font-size: 1.3em;
-    -webkit-transform: translateY(100%);
-    -ms-transform: translateY(100%);
-    -moz-transform: translateY(100%);
-    -o-transform: translateY(100%);
-    transform: translateY(100%);
-    -webkit-transition: transform 0.4s;
-    -ms-transition: transform 0.4s;
-    -moz-transition: transform 0.4s;
-    -o-transition: transform 0.4s;
-    transition: transform 0.4s; }
-
-.icons .content:hover, .icons .active-info {
-  background-color: #ffa64d; }
-  .icons .content:hover .inner span, .icons .active-info .inner span {
-    -webkit-transform: translateY(-80px);
-    -ms-transform: translateY(-80px);
-    -moz-transform: translateY(-80px);
-    -o-transform: translateY(-80px);
-    transform: translateY(-80px); }
-  .icons .content:hover .toggle, .icons .active-info .toggle {
-    -webkit-transform: translateY(-20%);
-    -ms-transform: translateY(-20%);
-    -moz-transform: translateY(-20%);
-    -o-transform: translateY(-20%);
-    transform: translateY(-20%); }
+      .icons .content .inner span {
+        margin-top: 50px;
+        display: block;
+        text-align: center;
+        font-weight: 500;
+        font-size: 1.3em;
+        -webkit-transition: transform 0.4s;
+        -ms-transition: transform 0.4s;
+        -moz-transition: transform 0.4s;
+        -o-transition: transform 0.4s;
+        transition: transform 0.4s; }
+    .icons .content .toggle {
+      color: #fff;
+      position: absolute;
+      background-color: #ffa64d;
+      bottom: 0;
+      height: 130px;
+      padding: 10px 30px 0;
+      text-align: center;
+      font-weight: 300;
+      line-height: 1.5em;
+      font-size: 1.3em;
+      -webkit-transform: translateY(100%);
+      -ms-transform: translateY(100%);
+      -moz-transform: translateY(100%);
+      -o-transform: translateY(100%);
+      transform: translateY(100%);
+      -webkit-transition: transform 0.4s;
+      -ms-transition: transform 0.4s;
+      -moz-transition: transform 0.4s;
+      -o-transition: transform 0.4s;
+      transition: transform 0.4s; }
+  .icons .content:hover, .icons .active-info {
+    background-color: #ffa64d; }
+    .icons .content:hover .inner span, .icons .active-info .inner span {
+      -webkit-transform: translateY(-80px);
+      -ms-transform: translateY(-80px);
+      -moz-transform: translateY(-80px);
+      -o-transform: translateY(-80px);
+      transform: translateY(-80px); }
+    .icons .content:hover .toggle, .icons .active-info .toggle {
+      -webkit-transform: translateY(-20%);
+      -ms-transform: translateY(-20%);
+      -moz-transform: translateY(-20%);
+      -o-transform: translateY(-20%);
+      transform: translateY(-20%); }
 
 #about-us {
   margin-bottom: 70px; }
@@ -6011,7 +6013,7 @@ body {
     transform: translateY(-11px) translateX(0) rotate(-45deg);
     background: #FFF; }
   #navigation .button_container span {
-    background: #ffa64d;
+    background: #404040;
     border: none;
     height: 5px;
     width: 100%;
