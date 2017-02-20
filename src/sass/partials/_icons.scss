@@ -55,8 +55,8 @@
         }
     }
 
-    .content:hover {
-        $transformValue: -40px;
+    .content:hover, .content.active-info {
+        $transformValue: -55px;
         .phone-icon {
             background: url("../icons/phone-white-optimized.svg");
             @include icon-props($icon-height);

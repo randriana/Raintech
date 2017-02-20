@@ -5818,7 +5818,8 @@ body {
   font-family: 'open-sans', sans-serif; }
   body h2 {
     text-align: center;
-    font-size: 2.1em;
+    font-size: 1.5em;
+    line-height: 1.2em;
     font-weight: 300; }
   body p {
     text-align: justify;
@@ -5826,7 +5827,7 @@ body {
     font-weight: 300; }
 
 .icons .content {
-  height: 350px;
+  height: 320px;
   position: relative;
   overflow: hidden;
   background-color: #fff;
@@ -5879,40 +5880,41 @@ body {
     -o-transition: transform 0.4s;
     transition: transform 0.4s; }
 
-.icons .content:hover {
+.icons .content:hover, .icons .active-info {
   background-color: #ffa64d; }
-  .icons .content:hover .inner span {
-    -webkit-transform: translateY(-60px);
-    -ms-transform: translateY(-60px);
-    -moz-transform: translateY(-60px);
-    -o-transform: translateY(-60px);
-    transform: translateY(-60px); }
-  .icons .content:hover .toggle {
-    -webkit-transform: translateY(0);
-    -ms-transform: translateY(0);
-    -moz-transform: translateY(0);
-    -o-transform: translateY(0);
-    transform: translateY(0); }
+  .icons .content:hover .inner span, .icons .active-info .inner span {
+    -webkit-transform: translateY(-80px);
+    -ms-transform: translateY(-80px);
+    -moz-transform: translateY(-80px);
+    -o-transform: translateY(-80px);
+    transform: translateY(-80px); }
+  .icons .content:hover .toggle, .icons .active-info .toggle {
+    -webkit-transform: translateY(-20%);
+    -ms-transform: translateY(-20%);
+    -moz-transform: translateY(-20%);
+    -o-transform: translateY(-20%);
+    transform: translateY(-20%); }
 
 #about-us {
-  margin-top: 70px;
   margin-bottom: 70px; }
 
-#grunder {
-  margin-top: 100px; }
-  #grunder p {
-    text-align: center;
-    margin-top: 20px;
-    font-size: 2em;
-    font-weight: 300; }
+#grunder p {
+  text-align: center;
+  margin: 20px 0 30px 0;
+  font-size: 6vw;
+  font-weight: 300; }
+
+#projects h2 {
+  margin-bottom: 25px; }
 
 #projects .image-container {
-  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 30px; }
   #projects .image-container img {
     width: 100%; }
 
 #contact {
-  margin: 200px 0; }
+  margin: 100px 0; }
   #contact .form-container {
     width: 70%; }
     #contact .form-container ul {
@@ -5965,17 +5967,17 @@ body {
         padding: 5px; }
 
 .intersection {
-  height: 350px;
+  height: 200px;
   text-align: center;
   color: #fff; }
 
 .text-block .text-header {
-  font-size: 2.1em; }
+  font-size: 1.5em;
+  margin-top: 50px; }
 
 .text-block .text-content {
-  margin-top: 50px;
-  padding: 30px 20px;
-  font-size: 1.7em; }
+  font-size: 1.3em;
+  text-align: center; }
 
 .no-padding {
   padding: 0; }
@@ -6174,147 +6176,152 @@ body {
   background-size: auto 100px;
   background-repeat: no-repeat; }
 
-.icons .content:hover .phone-icon {
+.icons .content:hover .phone-icon, .icons .content.active-info .phone-icon {
   background: url("../icons/phone-white-optimized.svg");
   background-position: center center;
   background-size: auto 100px;
   background-repeat: no-repeat;
-  -webkit-transform: translateY(-40px);
-  -ms-transform: translateY(-40px);
-  -moz-transform: translateY(-40px);
-  -o-transform: translateY(-40px);
-  transform: translateY(-40px); }
+  -webkit-transform: translateY(-55px);
+  -ms-transform: translateY(-55px);
+  -moz-transform: translateY(-55px);
+  -o-transform: translateY(-55px);
+  transform: translateY(-55px); }
 
-.icons .content:hover .mac-icon {
+.icons .content:hover .mac-icon, .icons .content.active-info .mac-icon {
   background: url("../icons/mac-white-optimized.svg");
   background-position: center center;
   background-size: auto 100px;
   background-repeat: no-repeat;
-  -webkit-transform: translateY(-40px);
-  -ms-transform: translateY(-40px);
-  -moz-transform: translateY(-40px);
-  -o-transform: translateY(-40px);
-  transform: translateY(-40px); }
+  -webkit-transform: translateY(-55px);
+  -ms-transform: translateY(-55px);
+  -moz-transform: translateY(-55px);
+  -o-transform: translateY(-55px);
+  transform: translateY(-55px); }
 
-.icons .content:hover .system-icon {
+.icons .content:hover .system-icon, .icons .content.active-info .system-icon {
   background: url("../icons/system-white.svg");
   background-position: center center;
   background-size: auto 100px;
   background-repeat: no-repeat;
-  -webkit-transform: translateY(-40px);
-  -ms-transform: translateY(-40px);
-  -moz-transform: translateY(-40px);
-  -o-transform: translateY(-40px);
-  transform: translateY(-40px); }
+  -webkit-transform: translateY(-55px);
+  -ms-transform: translateY(-55px);
+  -moz-transform: translateY(-55px);
+  -o-transform: translateY(-55px);
+  transform: translateY(-55px); }
 
-.icons .content:hover .responsive-icon {
+.icons .content:hover .responsive-icon, .icons .content.active-info .responsive-icon {
   background: url("../icons/responsive-white-optimized.svg");
   background-position: center center;
   background-size: auto 100px;
   background-repeat: no-repeat;
-  -webkit-transform: translateY(-40px);
-  -ms-transform: translateY(-40px);
-  -moz-transform: translateY(-40px);
-  -o-transform: translateY(-40px);
-  transform: translateY(-40px); }
+  -webkit-transform: translateY(-55px);
+  -ms-transform: translateY(-55px);
+  -moz-transform: translateY(-55px);
+  -o-transform: translateY(-55px);
+  transform: translateY(-55px); }
 
-.icons .content:hover .search-icon {
+.icons .content:hover .search-icon, .icons .content.active-info .search-icon {
   background: url("../icons/seo-white.svg");
   background-position: center center;
   background-size: auto 100px;
   background-repeat: no-repeat;
-  -webkit-transform: translateY(-40px);
-  -ms-transform: translateY(-40px);
-  -moz-transform: translateY(-40px);
-  -o-transform: translateY(-40px);
-  transform: translateY(-40px); }
+  -webkit-transform: translateY(-55px);
+  -ms-transform: translateY(-55px);
+  -moz-transform: translateY(-55px);
+  -o-transform: translateY(-55px);
+  transform: translateY(-55px); }
 
-.icons .content:hover .lightbulb-icon {
+.icons .content:hover .lightbulb-icon, .icons .content.active-info .lightbulb-icon {
   background: url("../icons/lightbulb-white.svg");
   background-position: center center;
   background-size: auto 100px;
   background-repeat: no-repeat;
-  -webkit-transform: translateY(-40px);
-  -ms-transform: translateY(-40px);
-  -moz-transform: translateY(-40px);
-  -o-transform: translateY(-40px);
-  transform: translateY(-40px); }
+  -webkit-transform: translateY(-55px);
+  -ms-transform: translateY(-55px);
+  -moz-transform: translateY(-55px);
+  -o-transform: translateY(-55px);
+  transform: translateY(-55px); }
 
-.icons .content:hover .design-icon {
+.icons .content:hover .design-icon, .icons .content.active-info .design-icon {
   background: url("../icons/pencil-white.svg");
   background-position: center center;
   background-size: auto 100px;
   background-repeat: no-repeat;
-  -webkit-transform: translateY(-40px);
-  -ms-transform: translateY(-40px);
-  -moz-transform: translateY(-40px);
-  -o-transform: translateY(-40px);
-  transform: translateY(-40px); }
+  -webkit-transform: translateY(-55px);
+  -ms-transform: translateY(-55px);
+  -moz-transform: translateY(-55px);
+  -o-transform: translateY(-55px);
+  transform: translateY(-55px); }
 
-.icons .content:hover .tool-icon {
+.icons .content:hover .tool-icon, .icons .content.active-info .tool-icon {
   background: url("../icons/tool-white.svg");
   background-position: center center;
   background-size: auto 100px;
   background-repeat: no-repeat;
-  -webkit-transform: translateY(-40px);
-  -ms-transform: translateY(-40px);
-  -moz-transform: translateY(-40px);
-  -o-transform: translateY(-40px);
-  transform: translateY(-40px); }
+  -webkit-transform: translateY(-55px);
+  -ms-transform: translateY(-55px);
+  -moz-transform: translateY(-55px);
+  -o-transform: translateY(-55px);
+  transform: translateY(-55px); }
 
-.icons .content:hover .code-icon {
+.icons .content:hover .code-icon, .icons .content.active-info .code-icon {
   background: url("../icons/prototype-white.svg");
   background-position: center center;
   background-size: auto 100px;
   background-repeat: no-repeat;
-  -webkit-transform: translateY(-40px);
-  -ms-transform: translateY(-40px);
-  -moz-transform: translateY(-40px);
-  -o-transform: translateY(-40px);
-  transform: translateY(-40px); }
+  -webkit-transform: translateY(-55px);
+  -ms-transform: translateY(-55px);
+  -moz-transform: translateY(-55px);
+  -o-transform: translateY(-55px);
+  transform: translateY(-55px); }
 
-.icons .content:hover .price-icon {
+.icons .content:hover .price-icon, .icons .content.active-info .price-icon {
   background: url("../icons/price-white.svg");
   background-position: center center;
   background-size: auto 100px;
   background-repeat: no-repeat;
-  -webkit-transform: translateY(-40px);
-  -ms-transform: translateY(-40px);
-  -moz-transform: translateY(-40px);
-  -o-transform: translateY(-40px);
-  transform: translateY(-40px); }
+  -webkit-transform: translateY(-55px);
+  -ms-transform: translateY(-55px);
+  -moz-transform: translateY(-55px);
+  -o-transform: translateY(-55px);
+  transform: translateY(-55px); }
 
-.icons .content:hover .clock-icon {
+.icons .content:hover .clock-icon, .icons .content.active-info .clock-icon {
   background: url("../icons/clock-white.svg");
   background-position: center center;
   background-size: auto 100px;
   background-repeat: no-repeat;
-  -webkit-transform: translateY(-40px);
-  -ms-transform: translateY(-40px);
-  -moz-transform: translateY(-40px);
-  -o-transform: translateY(-40px);
-  transform: translateY(-40px); }
+  -webkit-transform: translateY(-55px);
+  -ms-transform: translateY(-55px);
+  -moz-transform: translateY(-55px);
+  -o-transform: translateY(-55px);
+  transform: translateY(-55px); }
 
 #hero1 {
-  background: url("../images/raintech-header-2.jpeg");
+  /* deactivate on mobile devices
+    background: url("../images/raintech-header-2.jpeg");*/
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  height: 100vh; }
+  height: 80vh; }
   #hero1 img {
     position: absolute;
+    width: 90%;
     top: 35%;
-    left: 25%; }
+    left: 0;
+    right: 0;
+    margin: auto; }
   #hero1 .overlay {
     background-color: rgba(54, 92, 124, 0.9); }
 
 #hero2 {
-  background: url("../images/light.jpeg");
+  /* deactivate on mobile devices
+    background: url("../images/light.jpeg"); */
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; }
-  #hero2 .overlay {
-    background-color: rgba(51, 153, 255, 0.4); }
+  #hero2 .text {
+    padding: 0 20px; }
 
 #hero3 {
   background-size: cover;
@@ -6323,9 +6330,10 @@ body {
   #hero3 .overlay {
     background-color: #365c7c; }
     #hero3 .overlay .text {
-      padding: 0 100px;
-      font-size: 2.3em;
-      font-weight: 100; }
+      padding: 0 10px;
+      font-size: 1.6em;
+      font-weight: 100;
+      top: 25%; }
 
 .background {
   position: relative;
@@ -6333,12 +6341,12 @@ body {
 
 .overlay {
   height: 100%;
-  background-color: rgba(51, 153, 255, 0.4);
+  background-color: rgba(54, 92, 124, 0.9);
   position: relative; }
   .overlay .text {
     position: absolute;
-    top: 40%;
+    top: 35%;
     width: 100%;
-    font-size: 4em; }
+    font-size: 2em; }
 
 /*# sourceMappingURL=styles.css.map */
