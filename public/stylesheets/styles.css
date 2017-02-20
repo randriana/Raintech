@@ -5827,7 +5827,7 @@ body {
     font-weight: 300; }
 
 .icons {
-  background-color: #ffa64d;
+  background-color: #ffad33;
   padding-top: 25px; }
   .icons .content {
     height: 320px;
@@ -5864,7 +5864,7 @@ body {
     .icons .content .toggle {
       color: #fff;
       position: absolute;
-      background-color: #ffa64d;
+      background-color: #ffad33;
       bottom: 0;
       height: 130px;
       padding: 10px 30px 0;
@@ -5883,7 +5883,7 @@ body {
       -o-transition: transform 0.4s;
       transition: transform 0.4s; }
   .icons .content:hover, .icons .active-info {
-    background-color: #ffa64d; }
+    background-color: #ffad33; }
     .icons .content:hover .inner span, .icons .active-info .inner span {
       -webkit-transform: translateY(-80px);
       -ms-transform: translateY(-80px);
@@ -6162,7 +6162,7 @@ body {
   background-repeat: no-repeat; }
 
 .icons .content .inner .code-icon {
-  background: url("../icons/prototype.svg");
+  background: url("../icons/code.svg");
   background-position: center center;
   background-size: auto 100px;
   background-repeat: no-repeat; }
@@ -6268,7 +6268,7 @@ body {
   transform: translateY(-55px); }
 
 .icons .content:hover .code-icon, .icons .content.active-info .code-icon {
-  background: url("../icons/prototype-white.svg");
+  background: url("../icons/code-white.svg");
   background-position: center center;
   background-size: auto 100px;
   background-repeat: no-repeat;
@@ -6300,8 +6300,11 @@ body {
   -o-transform: translateY(-55px);
   transform: translateY(-55px); }
 
+.background-none {
+  background: none !important; }
+
 #hero1 {
-  /* deactivate on mobile devices*/
+  background: url("../images/raintech-header-2.jpeg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
@@ -6313,29 +6316,25 @@ body {
     left: 0;
     right: 0;
     margin: auto; }
-  #hero1 .overlay {
-    background-color: rgba(54, 92, 124, 0.9); }
 
 #hero2 {
-  /* deactivate on mobile devices
-    background: url("../images/light.jpeg"); */
+  background: url("../images/idea.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; }
-  #hero2 .text {
+  #hero2 .overlay .text {
     padding: 0 20px; }
 
 #hero3 {
+  background: url("../images/woman.jpg");
   background-size: cover;
   background-position: center center;
   background-attachment: fixed; }
-  #hero3 .overlay {
-    background-color: #365c7c; }
-    #hero3 .overlay .text {
-      padding: 0 10px;
-      font-size: 1.6em;
-      font-weight: 100;
-      top: 25%; }
+  #hero3 .overlay .text {
+    padding: 0 10px;
+    font-size: 1.6em;
+    font-weight: 100;
+    top: 25%; }
 
 .background {
   position: relative;
@@ -6378,7 +6377,7 @@ body {
   #grunder .icons, .icons {
     padding: 0; }
   #services .icons {
-    border-top: 25px solid #ffa64d; }
+    border-top: 25px solid #ffad33; }
   #about-us {
     margin: 30px 0 0; }
     #about-us .text-block .text-content {

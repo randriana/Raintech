@@ -1,6 +1,9 @@
+.background-none {
+    background: none !important;
+}
+
 #hero1 {
-    /* deactivate on mobile devices*/
-    //background: url("../images/raintech-header-2.jpeg");
+    background: url("../images/raintech-header-2.jpeg");
     @include background-props;
     height: 90vh;
 
@@ -12,28 +15,27 @@
         right: 0;
         margin: auto;
     }
-
-    .overlay {
-        background-color: rgba(54, 92, 124,0.9);
-        //background-color: $main-blue;
-    }
 }
 
 #hero2 {
-    /* deactivate on mobile devices
-    background: url("../images/light.jpeg"); */
-    @include background-props;
-
-    .text {
-        padding: 0 20px;
-    }
-}
-
-#hero3 {
+    background: url("../images/idea.jpg"); 
     @include background-props;
 
     .overlay {
-        background-color: rgb(54, 92, 124);
+
+        .text {
+            padding: 0 20px;
+        }
+    }
+}
+
+    
+
+#hero3 {
+    background: url("../images/woman.jpg"); 
+    @include background-props;
+
+    .overlay {
 
         .text {
             padding: 0 10px;

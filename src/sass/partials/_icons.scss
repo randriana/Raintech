@@ -42,7 +42,7 @@
             @include icon-props($icon-height);
         }
         .code-icon {
-            background: url("../icons/prototype.svg");
+            background: url("../icons/code.svg");
             @include icon-props($icon-height);
         }
         .price-icon {
@@ -98,7 +98,7 @@
             @include transformY($transformValue);
         }
         .code-icon {
-            background: url("../icons/prototype-white.svg");
+            background: url("../icons/code-white.svg");
             @include icon-props($icon-height);
             @include transformY($transformValue);
         }

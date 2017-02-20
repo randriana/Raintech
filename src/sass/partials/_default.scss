@@ -16,7 +16,7 @@ body {
 }
 
 .icons {
-    background-color: #ffa64d;
+    background-color: $primary-color;
     padding-top: 25px;
     .content {
         height: 320px;
@@ -46,7 +46,7 @@ body {
         .toggle {
             color: #fff;
             position: absolute;
-            background-color: #ffa64d;
+            background-color: $primary-color;
             bottom: 0;
             height: 130px;
             padding: 10px 30px 0;
@@ -60,7 +60,7 @@ body {
     }
 
     .content:hover, .active-info {
-        background-color: #ffa64d;
+        background-color: $primary-color;
         .inner {
             span {
                 @include transformY(-80px);
