@@ -2,12 +2,12 @@
     /* deactivate on mobile devices
     background: url("../images/raintech-header-2.jpeg");*/
     @include background-props;
-    height: 80vh;
+    height: 100vh;
 
     img {
         position: absolute;
         width: 90%;
-        top: 35%;
+        top: 40%;
         left: 0;
         right: 0;
         margin: auto;
