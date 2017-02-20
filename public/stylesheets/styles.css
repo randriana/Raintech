@@ -5903,7 +5903,7 @@ body {
 #grunder p {
   text-align: center;
   margin: 20px 0 30px 0;
-  font-size: 6vw;
+  font-size: 1.3em;
   font-weight: 300; }
 
 #projects h2 {
@@ -5911,7 +5911,8 @@ body {
 
 #projects .image-container {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  margin-bottom: 30px; }
+  margin-bottom: 30px;
+  max-width: 555px; }
   #projects .image-container img {
     width: 100%; }
 
@@ -5979,7 +5980,7 @@ body {
 
 .text-block .text-content {
   font-size: 1.3em;
-  text-align: center; }
+  text-align: left; }
 
 .no-padding {
   padding: 0; }
@@ -6300,16 +6301,15 @@ body {
   transform: translateY(-55px); }
 
 #hero1 {
-  /* deactivate on mobile devices
-    background: url("../images/raintech-header-2.jpeg");*/
+  /* deactivate on mobile devices*/
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
-  height: 100vh; }
+  height: 90vh; }
   #hero1 img {
     position: absolute;
     width: 90%;
-    top: 40%;
+    top: 35%;
     left: 0;
     right: 0;
     margin: auto; }
@@ -6350,5 +6350,52 @@ body {
     top: 35%;
     width: 100%;
     font-size: 2em; }
+
+@media (min-width: 768px) {
+  #hero1 img {
+    width: 75%; }
+  #hero2 .text {
+    font-size: 2.6em; }
+  #hero3 {
+    height: 190px; }
+    #hero3 .overlay .text {
+      font-size: 2em;
+      padding: 0 50px; } }
+
+@media (min-width: 768px) {
+  #grunder .text-header {
+    font-size: 2em; }
+  #grunder .text-content {
+    font-size: 1.5em; }
+  #grunder .icons {
+    padding: 30px; }
+    #grunder .icons .content .toggle {
+      font-size: 1.2em; }
+  #about-us .text-content {
+    padding: 0 40px; } }
+
+@media (min-width: 992px) {
+  #grunder .icons, .icons {
+    padding: 0; }
+  #services .icons {
+    border-top: 25px solid #ffa64d; }
+  #about-us {
+    margin: 30px 0 0; }
+    #about-us .text-block .text-content {
+      padding: 100px 15px 80px; } }
+
+@media (min-width: 1200px) {
+  #hero1 img {
+    max-width: 650px; }
+  #hero2 .text {
+    font-size: 3.3em; }
+  #hero3 {
+    height: 250px; }
+    #hero3 .overlay .text {
+      font-size: 2.8em; }
+  .intersection {
+    height: 250px;
+    text-align: center;
+    color: #fff; } }
 
 /*# sourceMappingURL=styles.css.map */
