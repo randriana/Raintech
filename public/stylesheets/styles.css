@@ -5867,7 +5867,7 @@ body {
     text-align: center;
     font-weight: 300;
     line-height: 1.5em;
-    font-size: 1.5em;
+    font-size: 1.3em;
     -webkit-transform: translateY(100%);
     -ms-transform: translateY(100%);
     -moz-transform: translateY(100%);
@@ -6101,7 +6101,7 @@ body {
 .icons .content .inner .lightbulb-icon, .icons .content .inner .design-icon, .icons .content .inner .tool-icon, .icons .content .inner .code-icon, .icons .content .inner .price-icon, .icons .content .inner .clock-icon {
   display: block;
   margin: 0 auto;
-  height: 125px;
+  height: 100px;
   -webkit-transition: transform 0.4s;
   -ms-transition: transform 0.4s;
   -moz-transition: transform 0.4s;
@@ -6111,73 +6111,73 @@ body {
 .icons .content .inner .phone-icon {
   background: url("../icons/phone-optimized.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat; }
 
 .icons .content .inner .mac-icon {
   background: url("../icons/mac-optimized.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat; }
 
 .icons .content .inner .system-icon {
   background: url("../icons/system.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat; }
 
 .icons .content .inner .responsive-icon {
   background: url("../icons/responsive-optimized.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat; }
 
 .icons .content .inner .search-icon {
   background: url("../icons/seo.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat; }
 
 .icons .content .inner .lightbulb-icon {
   background: url("../icons/lightbulb.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat; }
 
 .icons .content .inner .design-icon {
   background: url("../icons/pencil.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat; }
 
 .icons .content .inner .tool-icon {
   background: url("../icons/tool.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat; }
 
 .icons .content .inner .code-icon {
   background: url("../icons/prototype.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat; }
 
 .icons .content .inner .price-icon {
   background: url("../icons/price.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat; }
 
 .icons .content .inner .clock-icon {
   background: url("../icons/clock.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat; }
 
 .icons .content:hover .phone-icon {
   background: url("../icons/phone-white-optimized.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat;
   -webkit-transform: translateY(-40px);
   -ms-transform: translateY(-40px);
@@ -6188,7 +6188,7 @@ body {
 .icons .content:hover .mac-icon {
   background: url("../icons/mac-white-optimized.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat;
   -webkit-transform: translateY(-40px);
   -ms-transform: translateY(-40px);
@@ -6199,7 +6199,7 @@ body {
 .icons .content:hover .system-icon {
   background: url("../icons/system-white.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat;
   -webkit-transform: translateY(-40px);
   -ms-transform: translateY(-40px);
@@ -6210,7 +6210,7 @@ body {
 .icons .content:hover .responsive-icon {
   background: url("../icons/responsive-white-optimized.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat;
   -webkit-transform: translateY(-40px);
   -ms-transform: translateY(-40px);
@@ -6221,7 +6221,7 @@ body {
 .icons .content:hover .search-icon {
   background: url("../icons/seo-white.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat;
   -webkit-transform: translateY(-40px);
   -ms-transform: translateY(-40px);
@@ -6232,7 +6232,7 @@ body {
 .icons .content:hover .lightbulb-icon {
   background: url("../icons/lightbulb-white.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat;
   -webkit-transform: translateY(-40px);
   -ms-transform: translateY(-40px);
@@ -6243,7 +6243,7 @@ body {
 .icons .content:hover .design-icon {
   background: url("../icons/pencil-white.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat;
   -webkit-transform: translateY(-40px);
   -ms-transform: translateY(-40px);
@@ -6254,7 +6254,7 @@ body {
 .icons .content:hover .tool-icon {
   background: url("../icons/tool-white.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat;
   -webkit-transform: translateY(-40px);
   -ms-transform: translateY(-40px);
@@ -6265,7 +6265,7 @@ body {
 .icons .content:hover .code-icon {
   background: url("../icons/prototype-white.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat;
   -webkit-transform: translateY(-40px);
   -ms-transform: translateY(-40px);
@@ -6276,7 +6276,7 @@ body {
 .icons .content:hover .price-icon {
   background: url("../icons/price-white.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat;
   -webkit-transform: translateY(-40px);
   -ms-transform: translateY(-40px);
@@ -6287,7 +6287,7 @@ body {
 .icons .content:hover .clock-icon {
   background: url("../icons/clock-white.svg");
   background-position: center center;
-  background-size: auto 125px;
+  background-size: auto 100px;
   background-repeat: no-repeat;
   -webkit-transform: translateY(-40px);
   -ms-transform: translateY(-40px);
