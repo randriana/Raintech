@@ -31,7 +31,7 @@
     }
 
     #services .icons {
-        border-top: 25px solid $primary-color;
+        border-top: 15px solid $primary-color;
     }
 
     #about-us {
@@ -45,12 +45,6 @@
 }
 
 @media (min-width: $screen-lg-min) {
-    #hero1 {
-        img {
-            max-width: 650px;
-        }
-    }
-
     #hero2 {
         .text {
             font-size: 3.3em;
@@ -59,7 +53,7 @@
     #hero3 {
         height: 250px;
         .overlay .text {
-            font-size: 2.8em;
+            font-size: 3.3em;
         }
     }
     .intersection {

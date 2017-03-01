@@ -13,7 +13,7 @@ $('.toggle-info').click(function() {
 });
 
 $(document).ready(function() {
-	
+	var viewportWidth = $(window).width();	
 
 	if( viewportWidth < 992) {
 		$('.toggle-info').addClass('active-info');

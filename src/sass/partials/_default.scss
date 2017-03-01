@@ -1,5 +1,6 @@
 body {
     font-family: 'open-sans', sans-serif;
+    background-color: $background-color;
 
     h2 {
         text-align: center;
@@ -22,7 +23,7 @@ body {
         height: 320px;
         position: relative;
         overflow: hidden;
-        background-color: #fff;
+        background-color: $background-color;
         @include background-color-transition();
         
         .inner {
