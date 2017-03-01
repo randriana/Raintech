@@ -101,7 +101,7 @@ block content
 			.text-block
 				.row
 					.col-md-2
-						h2.text-header HVEM ER <span style="color: #f1a32c;">VI</span>
+						h2.text-header HVEM ER <span style="color: #f1a32c;">VI.</span>
 					.col-md-10
 						p.text-content Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur venenatis quam at urna aliquam, varius blandit massa molestie. 
 							| Aliquam sit amet lacinia ligula. Proin interdum risus arcu, et aliquet risus mattis tincidunt. Duis erat ligula, iaculis eu aliquet non.
@@ -111,7 +111,7 @@ block content
 							| Aliquam sit amet lacinia ligula. Proin interdum risus arcu, et aliquet risus mattis tincidunt. Duis erat ligula, iaculis eu aliquet non.
 	
 	section#projects
-		h2 HVA VI HAR <span style="color: #f1a32c;">JOBBET</span> MED
+		h2 HVA VI HAR <span style="color: #f1a32c;">JOBBET</span> MED.
 		.container
 			.row
 				.col-md-6
@@ -137,6 +137,7 @@ block content
 						li: input(type="email" name="_replyto" placeholder="Epost" required)
 						li: input(type="number" name="mobile" placeholder="Mobil")
 						li: input(type="text" name="_subject" placeholder="Emne" required)
+					input(type="hidden" name="_format" value="plain")
 					textarea(rows="5" name="message" placeholder="Melding" required)
 					input#submitbutton(type="submit" value="SEND")
 
