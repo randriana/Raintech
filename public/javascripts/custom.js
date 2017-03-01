@@ -25,6 +25,34 @@ $(document).ready(function() {
 	}
 });
 
+window.sr = ScrollReveal();
+	sr.reveal('.brand-logo', { 
+		duration: 500,
+		origin: 'right',
+		distance: '50px',
+		delay: 500,
+		easing: 'ease'
+	});
+
+	sr.reveal('.fadein', { 
+		duration: 1000,
+		delay: 500,
+		easing: 'ease',
+		viewFactor: 1,
+	});
+
+	sr.reveal('.image-container', {
+		duration: 1000,
+		viewFactor: 0.5,
+	},500);
+
+	sr.reveal('.form-container', { 
+		duration: 1000,
+		delay: 500,
+		easing: 'ease',
+	});
+
+/* activates responsive versjon when resizing beyond breakpoint */
 $(window).resize(function() {
 	var viewportWidth = $(window).width();
 

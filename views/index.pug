@@ -3,7 +3,7 @@ extends ./layouts/layout
 block content
 	header#hero1.background
 		.overlay
-		img(src="images/logo-new.svg")
+		img(src="images/logo-new.svg").fadein
 	section#services
 		.icons
 			.container-fluid
@@ -63,7 +63,7 @@ block content
 
 	#hero2.intersection
 		.overlay
-			.text
+			.text.fadein
 				span VI SETTER <span style="color: #f1a32c;">IDÉER</span> UT I <span style="color: #f1a32c;">LIVET.</span>
 
 	section#grunder
@@ -94,7 +94,7 @@ block content
 
 	#hero3.intersection
 		.overlay
-			.text
+			.text.fadein
 				span Du har <span style="color: #f1a32c;">idéene</span> - vi har <span style="color: #f1a32c;">kunnskapene.</span>
 	section#about-us
 		.container
@@ -115,11 +115,17 @@ block content
 		.container
 			.row
 				.col-md-6
-					.image-container.center-block
-							img(src="images/hoban.png")
+					a(href="http://www.hobanservicegroup.no/hjem").image-container.center-block
+						.overlay
+							.overlay-text Hoban Renhold AS
+						img(src="images/hoban.png")
+							
 				.col-md-6
-					.image-container.center-block
-							img(src="images/blueways.png")
+					a(href="http://www.blue-ways.org").image-container.center-block
+						.overlay
+							.overlay-text Blueways
+						img(src="images/blueways.png")
+							
 
 	section#contact
 		.container
