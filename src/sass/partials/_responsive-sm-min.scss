@@ -1,0 +1,77 @@
+@media (min-width: $screen-sm-min) {
+
+    #grunder {
+
+        .text-header {
+            font-size: 2em;
+        }
+
+        .text-content {
+            font-size: 1.5em;
+        }
+        .icons {
+            padding: 30px;
+            .content .toggle {
+                font-size: 1.2em;
+            }
+        }
+    }
+
+    #about-us {
+
+        .text-content {
+            padding: 0 40px;
+        }
+    }
+}
+
+@media (min-width: $screen-md-min) {
+    #grunder .icons, .icons {
+        padding: 0;
+    }
+
+    #about-us {
+        margin: 30px 0 0;
+        .text-block {
+            .text-content {
+                padding: 100px 15px 80px;
+            }
+        }
+    }
+}
+
+@media (min-width: $screen-lg-min) {
+    #hero2 {
+        .text {
+            font-size: 3.3em;
+        }
+    }
+    #hero3 {
+        height: 250px;
+        .overlay .text {
+            font-size: 3.3em;
+        }
+    }
+    .intersection {
+        height: 250px;
+        text-align: center;
+        color: #fff;
+    }
+
+    .icons .content:hover,.icons .active-info {
+        .inner {
+            span {
+                @include transformY(-100px);
+            }
+        }
+        .toggle {
+            @include transformY(-35%);
+        }
+    }
+}
+
+@media (min-width: $screen-md-min) and (max-width: $screen-lg-min) {
+    .responsive-text {
+        font-size: 1.2em !important;
+    }
+}

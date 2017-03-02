@@ -1,9 +1,11 @@
 body {
     font-family: 'open-sans', sans-serif;
+    background-color: $background-color;
 
     h2 {
         text-align: center;
-        font-size: 2.1em;
+        font-size: 1.5em;
+        line-height: 1.2em;
         font-weight: 300;
     }
 
@@ -14,12 +16,18 @@ body {
     }
 }
 
+header {
+    border-bottom: 20px solid $primary-color;
+}
+
 .icons {
+    background-color: $primary-color;
+    padding-top: 25px;
     .content {
         height: 350px;
         position: relative;
         overflow: hidden;
-        background-color: #fff;
+        background-color: $background-color;
         @include background-color-transition();
         
         .inner {
@@ -43,7 +51,7 @@ body {
         .toggle {
             color: #fff;
             position: absolute;
-            background-color: #ffa64d;
+            background-color: $primary-color;
             bottom: 0;
             height: 130px;
             padding: 10px 30px 0;
@@ -56,49 +64,79 @@ body {
         }
     }
 
-    .content:hover {
-        background-color: #ffa64d;
+    .content:hover, .active-info {
+        background-color: $primary-color;
         .inner {
             span {
-                @include transformY(-60px);
+                @include transformY(-120px);
             }
         }
         .toggle {
-            @include transformY(0);
+            @include transformY(-55%);
         }
     }
 }
 
 #about-us {
-    margin-top: 70px;
-    margin-bottom: 70px;
-
-   
+    padding: 50px 0;
 }
 
 #grunder {
-    margin-top: 100px;
-
     p {
         text-align: center;
-        margin-top: 20px;
-        font-size: 2em;
+        margin: 20px 0 30px 0;
+        font-size: 1.3em;
         font-weight: 300;
     }
 }
 
 #projects {
+    padding: 50px 0;
+
+    h2 {
+        margin-bottom: 25px;
+    }
+
     .image-container {
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        margin-bottom: 30px;
+        max-width: 555px;
+        position: relative;
 
         img {
             width: 100%;
+        }
+
+        .overlay {
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.0);
+            position: absolute;
+            @include background-color-transition();
+
+            .overlay-text {
+                text-align: center;
+                font-size: 3.5em;
+                color: $primary-color;
+                opacity: 0;
+                padding-top: 20%;
+                @include transition(opacity);
+            }
+        }
+
+        &:hover {
+            .overlay {
+                background-color: rgba(0, 0, 0, 0.8);
+
+                .overlay-text {
+                    opacity: 1;
+                } 
+            }
         }
     }
 }
 
 #contact {
-    margin: 200px 0;
+    padding: 50px 0;
     .form-container {
         width: 70%;
 
@@ -152,7 +190,6 @@ body {
         font-size: 1.2em;
     }
 
-
     ul {
         padding: 30px 0;
         li {
@@ -168,26 +205,23 @@ body {
             }
         }
     }
-
-    
-    
 }
 
 .intersection {
-    height: 350px;
+    height: 200px;
     text-align: center;
     color: #fff;
 }
 
 .text-block {
     .text-header {
-        font-size: 2.1em;
+        font-size: 1.5em;
+        margin-top: 50px;
     }
 
     .text-content {
-        margin-top: 50px;
-        padding: 30px 20px;
-        font-size: 1.7em;
+        font-size: 1.3em;
+        text-align: left;
     }
 }
 
