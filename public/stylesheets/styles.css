@@ -6403,7 +6403,8 @@ header {
     top: 35%;
     left: 0;
     right: 0;
-    margin: auto; }
+    margin: auto;
+    visibility: hidden; }
   #hero1 .overlay {
     background: rgba(54, 92, 124, 0.8);
     background: -webkit-linear-gradient(rgba(54, 92, 124, 0.8), #365c7c);
