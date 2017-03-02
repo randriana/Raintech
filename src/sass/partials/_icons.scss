@@ -18,7 +18,7 @@
             @include icon-props($icon-height);
         }
         .system-icon {
-            background: url("../icons/system.svg");
+            background: url("../icons/system-optimized.svg");
             @include icon-props($icon-height);
         }
         .responsive-icon {
@@ -50,7 +50,7 @@
             @include icon-props($icon-height);
         }
         .clock-icon {
-            background: url("../icons/clock.svg");
+            background: url("../icons/development.svg");
             @include icon-props($icon-height);
         }
     }
@@ -68,7 +68,7 @@
             @include transformY($transformValue);
         }
         .system-icon {
-            background: url("../icons/system-white.svg");
+            background: url("../icons/system-optimized-white.svg");
             @include icon-props($icon-height);
             @include transformY($transformValue);
         }
@@ -108,7 +108,7 @@
             @include transformY($transformValue);
         }
         .clock-icon {
-            background: url("../icons/clock-white.svg");
+            background: url("../icons/development-white.svg");
             @include icon-props($icon-height);
             @include transformY($transformValue);
         }

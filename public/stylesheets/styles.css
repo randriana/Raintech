@@ -6210,7 +6210,7 @@ body {
   background-repeat: no-repeat; }
 
 .icons .content .inner .system-icon {
-  background: url("../icons/system.svg");
+  background: url("../icons/system-optimized.svg");
   background-position: center center;
   background-size: auto 100px;
   background-repeat: no-repeat; }
@@ -6258,7 +6258,7 @@ body {
   background-repeat: no-repeat; }
 
 .icons .content .inner .clock-icon {
-  background: url("../icons/clock.svg");
+  background: url("../icons/development.svg");
   background-position: center center;
   background-size: auto 100px;
   background-repeat: no-repeat; }
@@ -6286,7 +6286,7 @@ body {
   transform: translateY(-55px); }
 
 .icons .content:hover .system-icon, .icons .content.active-info .system-icon {
-  background: url("../icons/system-white.svg");
+  background: url("../icons/system-optimized-white.svg");
   background-position: center center;
   background-size: auto 100px;
   background-repeat: no-repeat;
@@ -6374,7 +6374,7 @@ body {
   transform: translateY(-55px); }
 
 .icons .content:hover .clock-icon, .icons .content.active-info .clock-icon {
-  background: url("../icons/clock-white.svg");
+  background: url("../icons/development-white.svg");
   background-position: center center;
   background-size: auto 100px;
   background-repeat: no-repeat;

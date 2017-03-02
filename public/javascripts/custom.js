@@ -8,10 +8,6 @@ $('.nav-link').click(function() {
   	$('#nav-overlay').toggleClass('open');
 });
 
-$('.toggle-info').click(function() {
-	$(this).toggleClass('active-info');
-});
-
 $(document).ready(function() {
 	var viewportWidth = $(window).width();	
 
@@ -22,6 +18,9 @@ $(document).ready(function() {
 	/* deactivate background on iOS devices */
 	if( /iPhone|iPad|iPod/i.test(navigator.userAgent) ) {
 		$('#hero1, #hero2, #hero3').addClass('background-none');
+
+		/* ensures that active-info is on even for viewports > 992 */
+		$('.toggle-info').addClass('active-info');
 	}
 });
 
