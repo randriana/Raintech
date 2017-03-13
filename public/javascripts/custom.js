@@ -22,6 +22,12 @@ $(document).ready(function() {
 		/* ensures that active-info is on even for viewports > 992 */
 		$('.toggle-info').addClass('active-info');
 	}
+
+
+	/* set logo to visible after 1.5 sec */
+	setTimeout(function(){
+		$('.fadein').addClass("element-visible");
+	}, 2000);
 });
 
 window.sr = ScrollReveal();
