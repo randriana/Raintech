@@ -75,6 +75,12 @@ function receivedMessage(event) {
       case 'generic':
         sendGenericMessage(senderID);
         break;
+      case 'sandviken wifi':
+        sendWifiMessage(senderID, "sandviken");
+        break;
+      case "cresco code":
+        sendCodeMessage(senderID, "cresco");
+        break;
 
       default:
         sendTextMessage(senderID, messageText);
@@ -86,6 +92,41 @@ function receivedMessage(event) {
 
 function sendGenericMessage(recipientId, messageText) {
   // To be expanded in later sections
+}
+
+function sendWifiMessage( recipientId, place ) {
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      text: "Askim1831"
+    }
+  };
+
+  callSendAPI(messageData);
+}
+
+function sendCodeMessage( recipientId, type ) {
+  let code;
+
+  switch( type ) {
+    case "cresco":
+      code = "3598";
+      break;
+  }
+
+  var messageData = {
+    recipient: {
+      id: recipientId
+    },
+    message: {
+      text: code
+    }
+  };
+
+  callSendAPI(messageData);
+
 }
 
 function sendTextMessage(recipientId, messageText) {
