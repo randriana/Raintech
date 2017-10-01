@@ -3,6 +3,8 @@ var router = express.Router();
 
 const VERIFY_TOKEN = 'MY_FITIA_TOKEN';
 
+const PAGE_ACCESS_TOKEN = 'EAAJ08ZCPjCMEBAPZBc8jSJ1DGEh0GspidUgZAsg9yqaZB8uresPw6oiyg3P6CGkt8ddccjxjgjWErI7pepN71qd8mOZBALeN9czvUCRkmcHtYv9yZAUB7iGZAfeZAkaMsKf2X7fQEJ5CViiDVp8K0u2mgvz3LlirCaLoBAOtzLjGmwZDZD';
+
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Express' });
