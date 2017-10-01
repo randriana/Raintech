@@ -8,7 +8,7 @@ const PAGE_ACCESS_TOKEN = 'EAAJ08ZCPjCMEBAPZBc8jSJ1DGEh0GspidUgZAsg9yqaZB8uresPw
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Express' });
+  res.sendStatus(410);
 });
 
 router.get('/webhook', function(req, res) {
